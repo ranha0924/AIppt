@@ -364,6 +364,19 @@ html, body {
 .iframe-ph small { color: var(--dim); font-size: clamp(0.66rem, 1.2vw, 0.85rem); }
 .iframe-ph code { color: var(--accent); background: rgba(242, 74, 29, 0.1); padding: 0.1em 0.4em; }
 
+/* 작업 슬라이드 (앱 1개당 1장, 라이브 iframe) */
+.work-slide .live-aside .s-title { font-size: clamp(2rem, 5vw, 4.2rem); line-height: 1.02; }
+.work-idx { font-size: 0.72rem; letter-spacing: 0.16em; color: var(--accent); }
+.work-open {
+  align-self: flex-start; margin-top: 0.4rem;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.55rem 1rem; font-size: 0.75rem; letter-spacing: 0.1em;
+  color: var(--bone); text-decoration: none;
+  border: 1px solid var(--line-2); background: var(--ink-2);
+  transition: border-color 0.4s var(--ease), color 0.4s var(--ease), transform 0.4s var(--ease);
+}
+.work-open:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
 /* =====================================================================
    08. 정리 — 번호 목록
    ===================================================================== */
